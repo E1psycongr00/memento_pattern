@@ -10,4 +10,6 @@ object memento
 object "care taker" as caretaker
 
 originator o-- memento
+caretaker -> originator : memento 관련 요청
+
 @enduml
