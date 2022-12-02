@@ -15,8 +15,9 @@ public class Car {
     }
 
     public void move(int value) {
-        moveCondition(value);
-        this.position++;
+        if (moveCondition(value)) {
+            this.position++;
+        };
     }
 
     private boolean moveCondition(int value) {
